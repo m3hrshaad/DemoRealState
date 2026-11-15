@@ -10,7 +10,7 @@ const emptySettings: Settings = {
   brandDescriptor: 'مشاور املاک و سرمایه‌گذاری',
   logoUrl: '',
   description: '',
-  heroImage: '/images/hero.jpg',
+  heroImage: '',
   phone: '',
   mobile: '',
   email: '',
