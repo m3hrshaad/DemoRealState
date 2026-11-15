@@ -6,7 +6,7 @@ import { Brand } from './Brand';
 import { Button } from './ui/Button';
 
 const emptySettings: Settings = {
-  brandName: 'آژانس املاک شما',
+  brandName: 'آژانس املاک نیاز',
   brandDescriptor: 'مشاور املاک و سرمایه‌گذاری',
   logoUrl: '',
   description: '',
