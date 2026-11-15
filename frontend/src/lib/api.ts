@@ -191,7 +191,7 @@ async function request<T>(path: string, options: Options = {}): Promise<T> {
   }
   if (pathname === '/admin/properties' && method === 'POST') {
     const item = { ...body, id: makeId('property'), code: body.code || `DEMO-${Date.now()}`, isPublished: body.isPublished ?? true, isFeatured: body.isFeatured ?? false, views: 0, images: body.images ?? [], features: body.features ?? [], amenities: body.amenities ?? [], createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() };
-    state.properties.unshift(item); activity('property_created', `آگهی «${item.title}» ثبت شد.`, item.id); persist(); return ok(item) as T;
+    state.properties.unshift(item); activity('property_created', `آگهی «${item.code}» ثبت شد.`, item.id); persist(); return ok(item) as T;
   }
 
   const collectionMatch = pathname.match(/^\/admin\/(team|services)(?:\/([^/]+))?$/);
